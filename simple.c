@@ -17,6 +17,7 @@ int main (void)
     luaopen_string(L);       /* opens the string lib. */
     luaopen_math(L);         /* opens the math lib. */
 #endif
+    
     luaL_openlibs(L);
 	 
     while (fgets(buff, sizeof(buff), stdin) != NULL) {
